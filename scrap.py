@@ -13,5 +13,6 @@ d = feedparser.parse(sitefeed)
 
 #slackへ通知
 for entry in d.entries:
-    slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url="webhookで取得してきたslackのURLを書く")
     slack.notify(text =entry.title)
+  
